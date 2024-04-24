@@ -11,9 +11,11 @@ class Manager(Employee):
     PAID = 1800
 
     def __init__(self, emp_id):
+        print("Manager::__init__")
         super().__init__(emp_id)
 
     def get_paid(self, hours):
+        print("Manager::get_paid")
         return self.PAID * hours
 
 
@@ -21,9 +23,11 @@ class Worker(Employee):
     PAID = 2200
 
     def __init__(self, emp_id):
+        print("Worker::__init__")
         super().__init__(emp_id)
 
     def get_paid(self, hours):
+        print("Worker::get_paid")
         return self.PAID * hours
 
 
