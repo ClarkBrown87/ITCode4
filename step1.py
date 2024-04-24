@@ -11,4 +11,4 @@ class Square:
 
 
 my_square = Square(2, 4)
-print(my_square.area(), my_square.perimeter())
+print(f"Площадь: {my_square.area()}\nПериметр: {my_square.perimeter()}")
